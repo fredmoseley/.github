@@ -1,0 +1,35 @@
+name: Feature
+description: Propose new functionality.
+title: "feat: "
+labels: ["type: feat"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What should it do?
+      description: Describe the feature in a few sentences.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why?
+      description: The problem it solves or the value it adds.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: How we'll know it's done. One item per line.
+      value: |
+        - [ ] 
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Links, mockups, or anything else useful.
+    validations:
+      required: false
